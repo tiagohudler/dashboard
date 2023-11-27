@@ -1,0 +1,25 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    display: grid;
+    grid: 1fr 2fr 12fr / 1fr 4fr;
+}
+
+#sidebar {
+    background-color: blue;
+    grid-area: 1 / 1 / 4 / 2;
+}
+
+#maincontent {
+    background-color: #e7e5e4;
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+#navbar {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#actionsbar {
+    grid-area: 2 / 2 / 3 / 3;
+}
