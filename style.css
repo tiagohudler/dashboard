@@ -7,7 +7,8 @@ body {
     width: 100vw;
     margin: 0px;
     display: grid;
-    grid: 1fr 2fr 12fr / 1fr 4fr;
+    grid: 1fr 2fr 12fr / 20vw 80vw;
+    overflow: auto;
 }
 
 li > a {
@@ -38,9 +39,10 @@ input {
     background-color: #e7e5e4;
     grid-area: 3 / 2 / 4 / 3;
     display: grid;
-    grid: 1fr 1fr / 2fr 1fr ;
+    grid: 0.5fr 3fr 0.5fr 3fr / 2fr 1fr ;
     gap: 15px;
-    padding: 0px 15px 15px 15px;
+    padding: 0px 1vw 15px 1vw;
+    box-shadow: inset 1px 6px 7px 0px rgba(0,0,0,0.33);
 }
 
 #navbar {
@@ -65,7 +67,7 @@ input {
     grid-area: 2 / 2 / 3 / 3;
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 2vw;
 }
 
 span {
@@ -95,46 +97,50 @@ span {
     padding: 10px;
 }
 
-
-
-
-
 #projects {
     display: grid;
-    grid: 0.7fr 5fr / 1fr;
-    grid-area: 1 / 1 / 3 / 2;
+    grid: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 2vw; 
+    grid-area: 2 / 1 / 5 / 2;
 }
 
-#card-holder{
-    display: grid;
-    grid: repeat(3, 1fr) / repeat(2, 1fr);
-    gap: 20px; 
+#projects-title{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#ann-title {
+    grid-area: 1 / 2 / 2 / 3;
 }
 
 #announcements {
-    grid-area: 1 / 2 / 2 / 3;
-    display: grid;
-    grid: 0.7fr 0.9fr 0.9fr 0.9fr / 1fr;
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card {
     background-color: white;
     border-radius: 10px;
     border-left: 5px solid green;
+    box-shadow: 1px 4px 7px 0px rgba(0,0,0,0.33);
 }
 
 .anncard{
     background-color: white;
-    height: 9vh;
+    flex-grow: 1;
     border-radius: 10px;
+    border-bottom: #e7e5e4 solid 1px;
+    box-shadow: 1px 4px 7px 0px rgba(0,0,0,0.33);
 }
 
 #trend-card {
     background-color: white;
     border-radius: 10px;
+    box-shadow: 1px 4px 7px 0px rgba(0,0,0,0.33);
 }
 
 #trending {
+    grid-area: 4 / 2 / 5 / 3;
     display: grid;
-    grid: 1fr 2.8fr / 1fr;
+    grid: 1fr / 1fr;
 }
