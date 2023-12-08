@@ -61,6 +61,19 @@ input {
 #navbar > div > img {
     height: 5vh;
     border-radius: 100%;
+    margin-right: -25px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    height: auto;
 }
 
 #actionsbar {
@@ -144,3 +157,5 @@ span {
     display: grid;
     grid: 1fr / 1fr;
 }
+
+
