@@ -50,6 +50,7 @@ input {
     display: flex;
     justify-content: space-around;
     padding: 10px;
+    align-items: center;
 }
 
 #navbar > div {
@@ -73,7 +74,7 @@ form {
 .icon-button {
     background: none;
     border: none;
-    height: auto;
+    height: 24px;
 }
 
 #actionsbar {
